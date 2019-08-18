@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors
 
- Result: [Rock, Paper, Scissors](https://birthelambrechts.github.io/Rock-Paper-Scissors)
+ Result: [Rock, Paper, Scissors](https://birthelambrechts.github.io/Javascript/Rock-Paper-Scissors)
 
 
 # Challenge: Conditional statements
