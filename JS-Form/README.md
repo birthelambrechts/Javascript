@@ -1,6 +1,6 @@
 # JS-Form
 
-Result: [My form](https://birthelambrechts.github.io/JS-Form/.)
+Result: [My form](https://birthelambrechts.github.io/Javascript/JS-Form/.)
 
 
 # Challenge: Javascript to the challenge
