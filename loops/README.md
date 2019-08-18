@@ -1,6 +1,6 @@
 # loops
 
-Result: [Looooooops](https://birthelambrechts.github.io/loops)
+Result: [Looooooops](https://birthelambrechts.github.io/Javascript/loops)
 
 
 # Challenge: Looooops
