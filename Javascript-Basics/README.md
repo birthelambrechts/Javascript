@@ -1,6 +1,6 @@
 # Javascript-Basics
 
-Result: [Objects](https://birthelambrechts.github.io/Javascript-Basics/objects/index.html)
+Result: [Objects](https://birthelambrechts.github.io/Javascript/Javascript-Basics/objects/index.html)
 
 
 # Challenge: Objects
