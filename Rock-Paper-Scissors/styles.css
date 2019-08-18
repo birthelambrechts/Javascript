@@ -1,0 +1,54 @@
+body {
+  margin-top: 3%;
+  font-family: sans-serif;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.637);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.384), 0 0 10px rgba(255, 255, 255, 0.438);
+}
+
+.content {
+  text-align: center;
+}
+
+H1 {
+  font-size: 45px;
+}
+
+H3 {
+  font-size: 25px;
+}
+
+button {
+  margin: 10px;
+}
+
+#result {
+  color: #009b79;
+  font-size: 25px;
+}
+
+.playGame {
+  color: blue;
+}
+
+.custom-select {
+  background-color: aqua;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+.rock {
+  margin: -450px 800px 0 0;
+}
+
+.paper {
+  margin: 50px 0px  0 -600px;
+}
+
+.sciss {
+  margin: 0px 0px 0 650px;
+}
+/*# sourceMappingURL=styles.css.map */

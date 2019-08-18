@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript tutorial</title>
+    <script src="javascript.js"></script>
+    <link rel='stylesheet' href='javascript.css'/>
+
+</head>
+<body>
+<H1>Variables</H1>
+<p>
+  var x=5 <br>
+    Var, may or may not be reassigned, and the variable may or may not be used for an entire function, <br>or just for the purpose of a block or loop. exist outside of the function.<br>
+    <br>
+let x=5<br>
+Let, the identifier  be reassigned. Best to use.<br>
+<br>
+const x=5<br>
+Const, the identifier won’t be reassigned. For example PI = 3,14.......<br>
+</p>
+<h3>Console</h3>
+<p>
+    console.log( test="hello",  type="there");<br>
+    console.dir( test="hello", type="there");<br>
+    <br>
+    console.log() writes a message to the console. easy for testing. recognizes it as an object. <br>
+    console.dir() Does not reconize as an object.<br>
+    Press F12 and look in the console ;)<br>
+</p>
+<h1>Data types</h1>
+<p>
+let number=4;<br>
+let string="Four";<br>
+let boolean="is it four? true/false";<br>
+let array="four, four, four, four";<br>
+number= a number..., string= a word, boolean= if true, if false, array= opsomming.<br>
+</p>
+<h1>Operators</h1>
+<p>
+  
+
+
+  <table>
+      <tr><H2>Arithmetic operators</H2></tr>
+        <tr><th>Addition</th><th>	+ </th><th>	x + y</th><th>5 + 2 
+          <button onclick="myFunctionplus()">=</button>
+          <p id="result"></p></th> </tr>
+
+        <tr><th>Subtraction</th><th> - </th><th>	 x - y</th><th>5 - 2 
+        <button onclick="myFunctionmin()">=</button>
+          <p id="resultmin"></p></th></tr>
+
+
+        <tr><th>Exponententiation</th><th> ** </th><th>	 x ** y</th>
+          <th>5 ** 2 
+              <button onclick="myFunctionexp()">=</button>              
+              <p id="resultexp"></p></th></tr>
+
+        <tr><th>Division</th><th> /	</th><th> x / y</th>
+          <th>5 / 2 
+            <button onclick="myFunctiondi()">=</button>           
+            <p id="resultdi"></p></th></tr>
+
+        <tr><th>Remainder</th><th>  % </th><th>	 x % y</th> 
+          <th>5 % 2 
+            <button onclick="myFunctionre()">=</button>
+            <p id="resultre"></p></th></tr>
+
+        <tr><th>Multiplication</th><th>	* </th><th>	 x * y</th>
+          <th>5 * 2 
+              <button onclick="myFunctionmul()">=</button>
+              <p id="resultmul"></p></th></tr></tr>
+
+        <tr><th>Increment</th><th>	++ </th><th>	x++ </th>
+          <th>5 ++  
+            <button onclick="myFunctioninc()">=</button>
+            <p id="resultinc"></p></th></tr>
+
+        <tr><th>Decrement</th><th> --	</th><th> x-- </th><th>5 --  
+            <button onclick="myFunctiondec()">=</button>
+            <p id="resultdec"></p></th></tr>
+       
+    </table>
+  
+<br>
+<br>
+  
+  <table>
+  <tr><H2>Assignment operators</H2></tr>
+    <tr><th>Assignment</th><th>	x = y</th><th>	x = y</th>
+      <th> x = y  
+        <button onclick="myFunctionass()">=</button>
+        <p id="resultass"></p></th></tr>
+
+    <tr><th>Addition assignment</th><th>	x += y</th><th>	x = x + y</th>
+      <th> x + 5
+          <button onclick="myFunctionaass()">=</button>
+          <p id="resultaass"></p></th></tr></tr>
+
+    <tr><th>Subtraction assignment</th><th>	x -= y</th><th>	x = x - y</th>
+      <th> x - 5
+          <button onclick="myFunctionsass()">=</button>
+          <p id="resultsass"></p></th></tr></tr>
+
+    <tr><th>Multiplication assignment</th><th>	x *= y</th><th>	x = x * y</th>
+      <th> x * 2
+          <button onclick="myFunctionmass()">=</button>
+          <p id="resultmass"></p></th></tr>
+
+    <tr><th>Division assignment	</th><th>x /= y	</th><th>x = x / y</th>
+      <th> x */ 2
+          <button onclick="myFunctiondass()">=</button>
+          <p id="resultdass"></p></tr>
+
+    <tr><th>Remainder assignment</th><th>	x %= y</th><th>	x = x % y</th>
+      <th> x % 2
+          <button onclick="myFunctionrass()">=</button>
+          <p id="resultrass"></p></th></tr>
+
+    <tr><th>Exponentiation assignment</th><th>	x **= y</th><th>	x = x ** y</th>
+      <th> x ** 2
+        <button onclick="myFunctioneass()">=</button>
+        <p id="resulteass"></p></th></tr>
+</table>
+<br>
+<br>
+
+
+<table>
+    <tr><H2>Data types and operators! Mix it up!</H2></tr>
+      <tr><th>string + numbers</th>
+        <th> vijf + 5  
+          <button onclick="myFunctionsn()">=</button>
+          <p id="resultsn"></p></th></tr>
+
+          <tr><th>string + string</th>
+            <th> vijf + vijf  
+              <button onclick="myFunctionss()">=</button>
+              <p id="resultss"></p></th></tr>
+
+              <tr><th>string + string</th>
+                <th> vijf + vijf  
+                  <button onclick="myFunctionssm()">=</button>
+                  <p id="resultssm"></p></th></tr>
+
+                  <tr><th>string * number </th>
+                    <th> hi*3
+                      <button onclick="myFunctiongr()">=</button>
+                      <p id="greets"></p></th></tr>
+
+                  <tr><th>array + string</th>
+                    <th>  hi + you 
+                      <button onclick="myFunctiongra()">=</button>
+                      <p id="greetz"></p></th></tr>
+
+                      <tr><th>boolean + boolean</th>
+                        <th>  true + true 
+                          <button onclick="myFunctionbo()">=</button>
+                          <p id="bool"></p></th></tr>
+
+                          <tr><th>boolean + boolean + boolean</th>
+                            <th>  true + false + true
+                              <button onclick="myFunctionbof()">=</button>
+                              <p id="boolf"></p></th></tr>
+
+                          <tr><th>boolean + boolean + boolean + boolean</th>
+                            <th>  true + true + true + true
+                              <button onclick="myFunctionbo1()">=</button>
+                              <p id="bool1"></p></th></tr>
+    
+
+
+
+                     
+        
+                  
+  
+      
+  </table>
+</p>    
+</body>
+</html>

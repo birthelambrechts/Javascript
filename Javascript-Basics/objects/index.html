@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript objects</title>
+    
+</head>
+<style>
+    body{
+        margin-left: 40%;
+       ;}
+
+    img{
+            width: 260px;
+            height: auto;
+        }
+    .myFamily{
+            display: flex;
+            flex-direction: column;
+        }
+    button{
+        width: 260px;
+        font-size: 17px;
+padding: 2px;
+        }
+    h1{
+        margin-left:1%;
+    }
+    ul {
+        font-size: 17px;
+   list-style: none;
+}
+    
+    </style>
+<body>       
+<h1> My family and me </h1>
+<div class="myFamily">
+    <button id="mySelf">Click for info about me!</button>
+    <button id="myHusband">Click for info about my husband!</button>
+    <button id="myFather">Click for info about my father!</button>
+    <button id="myMother">Click for info about my mother!</button>
+</div>
+<div class="card">
+        <img src="./images/familyphoto.jpeg" alt="monkeysarewierd" id="img">
+        <ul id="list">
+        </ul>
+    </div>
+<script>
+
+// Oef 1
+let aboutMe = {
+    name: "Birthe",
+    age: 27,
+    gender: "female",
+    favoriteFood: "Steppegras",
+    favoriteSeries: "The Punisher",
+    favoriteMovies: "A clockwork orange",
+    single: "no",
+}
+console.log(aboutMe);
+
+
+// Oef 2 & 3
+let buttons = document.querySelectorAll("button");
+let img = document.getElementById("img");
+let list = document.getElementById("list")
+
+// Constructor 
+function familyMember(name, age, gender, favoriteFood, favoriteSeries, favoriteMovies, single, url, buttons) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.favoriteFood = favoriteFood;
+    this.favoriteSeries = favoriteSeries;
+    this.favoriteMovies = favoriteMovies;
+    this.single = single;
+    this.url = url; 
+    this.buttons = buttons 
+    buttons.addEventListener("click", function () {
+        img.src = url;
+        clear()
+        
+        list.appendChild(document.createElement("li")).innerHTML = "My name is " + name + ".";
+        list.appendChild(document.createElement("li")).innerHTML = "My Age is " + age + ".";
+        list.appendChild(document.createElement("li")).innerHTML = "I am " + gender + ".";
+        list.appendChild(document.createElement("li")).innerHTML = "My favorite food is " + favoriteFood + ".";
+        list.appendChild(document.createElement("li")).innerHTML = "My favorite serie is " + favoriteSeries+ ".";
+        list.appendChild(document.createElement("li")).innerHTML = "My favorite movie is " + favoriteMovies + ".";
+        list.appendChild(document.createElement("li")).innerHTML = "Am i single? " + single; + "."
+    });
+}
+function clear() {
+    list.innerHTML = ""
+}
+
+// Create a new Person object
+let mySelf = new familyMember("Birthe", 27, "Female", "Steppegras", "The Punisher", "A clockwork orange", "No","./images/Me.jpg", buttons[0]);
+let myHusband = new familyMember("Kenny", 28, "Male", "Bbq", "One Piece", "The mask", "No","./images/Husband.jpg", buttons[1]);
+let myFather = new familyMember("Marc", 54, "Male", "Lasagne", "Football", "The blues brothers", "No","./images/momanddad.jpg", buttons[2]);
+let myMother = new familyMember("Linda", 53, "Female", "Fish", "La casa de papel", "Big Fish", "No","./images/momanddad.jpg", buttons[3]);
+    </script>
+</body>
+</html>

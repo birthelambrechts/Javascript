@@ -1,0 +1,24 @@
+body{
+    margin:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.resulteass::after{
+    color: green;
+}

@@ -1,0 +1,886 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div#pokedex{
+padding:50px;
+}
+/**********links*********/
+div#left {
+    width: 400px;
+    height: 500px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    background-color: #790707;
+    border-top-left-radius: 15px;
+}
+
+div#lens {
+    width: 60px;
+    height: 60px;
+    margin-left: -130px;
+    margin-top: -30px;
+    border: 5px solid #fff;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 10px #490000;
+    background: radial-gradient(#05fbfb, #29abe3);
+    border-radius: 35px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+div#reflect {
+    width: 30px;
+    height: 18px;
+    margin: 3px 0 0 15px;
+    background: #fff;
+    opacity: 0.6;
+    border-radius: 15px 9px;
+}
+
+div#smallbuttons {
+    position: absolute;
+    margin-left: -55px;
+    margin-top: -35px;
+}
+
+div#knopje1 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    box-shadow: 0 0 10px #490000;
+    border-radius: 20px;
+    background: radial-gradient(#fb7b7b, #fb0505);
+}
+div#knopje1-1 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    box-shadow: 0 0 10px #490000;
+    border-radius: 20px;
+    background: radial-gradient(#964949, #850101);
+}
+
+div#knopje2 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    box-shadow: 0 0 10px #490000;
+    border-radius: 20px;
+    background: radial-gradient(#a1a324, #fbce05);
+}
+div#knopje2-1 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    box-shadow: 0 0 10px #490000;
+    border-radius: 20px;
+    background: radial-gradient(#ffbc04, #c76a00);
+}
+
+div#knopje3 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+    box-shadow: 0 0 10px #490000;
+    border-radius: 20px;
+    background: radial-gradient(#047001, #013d04);
+}
+div#knopje3-1 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+    box-shadow: 0 0 10px #490000;
+    border-radius: 20px;
+    background: radial-gradient(#b0ddae, #57cc5d);
+}
+
+div#bg-left {
+    position: absolute;
+    top: 95px;
+    width: 400px;
+    height: 420px;
+    background-color: #c00d0d;
+    border-bottom-left-radius: 2em;
+}
+
+div#screen {
+    height: 245px;
+    width: 300px;
+    padding: 0 20px;
+    background-color: #b0b0b0;
+    float: left;
+    position: absolute;
+    top: 130px;
+    left: 19px;
+    border-radius: 15px;
+}
+
+div#top-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+div#topredbutton {
+    height: 8px;
+    width: 8px;
+    background-color: #c00d0d;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+div#topredbutton-1 {
+    height: 8px;
+    width: 8px;
+    background-color: #d45636;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+div#pokemon-picture>img {
+    border-radius: 15px;
+    height: 175px;
+    width: 254px;
+}
+
+div#pokemon-picture {
+    height: 181px;
+    width: 260px;
+    margin-bottom: 9px;
+    background-color: #fff;
+    border: 3px solid #494949;
+    clear: both;
+    border-radius: 15px;
+}
+
+.bottomredbutton {
+    height: 26px;
+    width: 26px;
+    background-color: #c00d0d;
+    margin-left: 35px;
+    float: left;
+    border-radius: 30px;
+    box-shadow: 2px 2px #222020;
+}
+
+
+div#speakers {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+div.speaker {
+    height: 4px;
+    margin-bottom: 3px;
+    background-color: #494949;
+    box-shadow: 1px 1px #222020;
+}
+
+div#cornered {
+    content: "";
+    border-top: 40px solid #b0b0b0;
+    border-left: 40px solid #c00d0d;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.leftbigbluebutton {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(27, 81, 197);
+    position: absolute;
+    top: 395px;
+    left: 30px;
+    border-radius: 100px;
+    z-index: 1;
+    box-shadow: 2px 2px #222020;
+}
+
+
+.leftlonggreenbutton {
+    height: 13px;
+    width: 50px;
+    position: absolute;
+    top: 405px;
+    left: 165px;
+    border-radius: 100px;
+    background-color: rgb(55, 197, 27);
+    box-shadow: 2px 2px #222020;
+}
+
+.leftlongorangebutton {
+    height: 13px;
+    width: 50px;
+    position: absolute;
+    top: 405px;
+    left: 110px;
+    border-radius: 100px;
+    background-color: rgb(197, 138, 27);
+    box-shadow: 2px 2px #222020;
+}
+/**arrow**/
+div#cross {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 394px;
+    left: 230px;
+}
+
+div#leftcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    border-radius: 5px;
+}
+
+div#previous {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #111;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+div#topcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    border-radius: 5px;
+}
+
+div#uparrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #111;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+div#rightcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    border-radius: 5px;
+}
+
+div#next {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #111;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+div#bottomcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    border-radius: 5px;
+}
+
+div#downarrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #111;
+    position: absolute;
+    bottom: 5px;
+    left: 4px;
+}
+
+div#middlecross {
+    width: 35px;
+    height: 35px;
+    background-color: #222;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    border-radius: 5px;
+}
+
+div#middlecircle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+div#hpbox {
+    position: absolute;
+    bottom: 20px;
+    left: 118px;
+    background-color: #084f5c;
+    height: 50px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+div#idbox {
+    background-color: #eeeeee;
+    font-size: 25px;
+    font-weight: 600;
+    height: 35px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+div#middlestuk {
+    width: 50px;
+    height: 440px;
+    float: right;
+    margin-top: 51px;
+}
+
+div#middlestuk1-1 {
+    position: absolute;
+    width: 50px;
+    height: 464px;
+    background-image: radial-gradient(red, #880404)
+}
+
+div#middlestuk1 {
+    height: 40px;
+    background-color: #5c0101;
+    opacity: 0.3;
+    margin-top: 50px;
+    margin-bottom: 262px;
+    border-top: 2px solid #290101;
+    border-bottom: 2px solid #290101;
+}
+
+div#middlestuk2 {
+    height: 40px;
+    background-color: #5e0000;
+    opacity: 0.3;
+    border-top: 2px solid #330000;
+    border-bottom: 2px solid #330000;
+}
+
+div#middlestuk3 {
+    height: 40px;
+    background-color: #5e0000;
+    opacity: 0.3;
+    border-top: 2px solid #330000;
+    border-bottom: 2px solid #330000;
+    margin-top: -437px;
+}
+
+/**********rechts*********/
+
+div#right {
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    z-index: -1;
+}
+
+div#bg-right {
+    position: absolute;
+    top: 95px;
+    width: 350px;
+    height: 420px;
+    background-color: #c00d0d;
+    border-bottom-right-radius: 30px;
+    z-index: -1;
+}
+
+div#name-input {
+    background-color: #0dc00d;
+    height: 110px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 130px;
+
+}
+
+div#buttonsrightflexbox {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+div.buttonblue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 45px;
+    background-color: rgb(44, 67, 172);
+    margin-right: 2px;
+    margin-top: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #0c0324;
+
+}
+
+div#buttonblue1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#buttonblue2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#smallbutton4 {
+    width: 15px;
+    height: 15px;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    top: 365px;
+    left: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #490000;
+    -webkit-box-shadow: 0 0 10px #490000;
+    -moz-box-shadow: 0 0 10px #490000;
+    -o-box-shadow: 0 0 10px #490000;
+    background: radial-gradient(#ff9b5b, #fb6505);
+    background: -webkit-radial-gradient(#ff9b5b, #fb6505);
+    background: -moz-radial-gradient(#ff9b5b, #fb6505);
+    background: -o-radial-gradient(#ff9b5b, #fb6505);
+}
+div#smallbutton4-1 {
+    width: 15px;
+    height: 15px;
+    float: left;
+    z-index: 2;
+    position: absolute;
+    top: 365px;
+    left: 50px;
+    border-radius: 20px;
+    background: radial-gradient(#b14125, #bd4530);
+}
+
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+  }
+  .blink{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 1.4s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+  }
+
+div#smallbutton5 {
+    width: 15px;
+    height: 15px;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    top: 365px;
+    left: 75px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #490000;
+    background: radial-gradient(#0abd0a, #057b05);
+}
+div#smallbutton5-1 {
+    width: 15px;
+    height: 15px;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    top: 365px;
+    left: 75px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #490000;
+    background: radial-gradient(#0c680c, #034d03);
+}
+
+.rightlonggreenbutton {
+    height: 13px;
+    width: 50px;
+    position: absolute;
+    top: 365px;
+    left: 230px;
+    border-radius: 100px;
+    background-color: rgb(55, 197, 27);
+    box-shadow: 2px 2px #222020;
+}
+
+.rightlongorangebutton {
+    height: 13px;
+    width: 50px;
+    position: absolute;
+    top: 365px;
+    left: 170px;
+    border-radius: 100px;
+    background-color: rgb(197, 138, 27);
+    box-shadow: 2px 2px #222020;
+}
+
+
+.yellowbox1 {
+    width: 90px;
+    height: 40px;
+    z-index: 1;
+    background-color: #ffff00;
+    position: absolute;
+    top: 465px;
+    left: 170px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff6600 inset, 2px 2px #222020;
+}
+
+.yellowbox2 {
+    width: 90px;
+    height: 40px;
+    z-index: 1;
+    background-color: #ffff00;
+    position: absolute;
+    top: 465px;
+    left: 65px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff6600 inset, 2px 2px #222020;
+}
+
+div#arrowbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    background-color: #777763;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #3f3d3c inset, 2px 2px #222020;
+    margin-top: -340px;
+    margin-left: -25px;
+}
+
+div#leftarrow1 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid rgb(119, 12, 12);
+    border-bottom: 10px solid transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#rightarrow1 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid rgb(119, 12, 12);
+    border-bottom: 10px solid transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 35px;
+}
+
+div#rightbuttons3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 410px;
+    margin-left: 20px;
+}
+
+.play-button {
+    width: 45px;
+    height: 45px;
+    background-color: yellow;
+    border-radius: 50px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -340px;
+    margin-left: 185px;
+    box-shadow: 2px 2px #222020;
+}
+
+div#leftarrow2 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 12px solid rgb(119, 12, 12);
+    border-bottom: 10px solid transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/**borders**/
+
+div#borderright {
+    display: flex;
+    justify-content: center;
+    margin-top: -400px;
+}
+
+div#vierkantroodborderright {
+    width: 250px;
+    height: 70px;
+    background-color: #c00d0d;
+    border-top-right-radius: 85px 60px;
+    margin-left: -50px;
+
+}
+
+div#vierkantwitborderright {
+    width: 200px;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 85px 60px;
+    margin-left: -32px;
+    margin-top: -10px;
+    z-index: 1000;
+}
+
+div#vierkantroodborderleft {
+    position: absolute;
+    width: 212px;
+    height: 96px; 
+    background-color: #5e0000;
+    border-bottom-right-radius: 85px 60px;
+    border-top-left-radius: 15px;
+    margin-top: -110px;
+}
+div#vierkantroodborderleft2 {
+    position: absolute;
+    width: 212px;
+    height: 96px;
+    background-color:#790707;
+    border-bottom-right-radius: 85px 60px;
+    border-top-left-radius: 15px;
+    margin-top: -120px;
+    margin-left: 2px;
+}
+
+
+div#vierkantwitborderleft {
+    width: 200px;
+    height: 70px;
+    background-color: #c00d0d;
+    border-top-left-radius: 85px 60px;
+    margin-left: 150px;
+    margin-top: 51px;
+}
+
+div#borderdark {
+    width: 760px;
+    height: 420px;
+    background-color:  #5e0000;
+    position: absolute;
+    margin-top: -153px;
+    margin-left:-415px;
+    z-index: -1000;
+    border-radius: 2em;
+}
+div#borderdark2 {
+    width: 360px;
+    height: 320px;
+    background-color:  #5e0000;
+    position: absolute;
+    margin-top: -258px;
+    margin-left:-415px;
+    z-index: -1000;
+    border-radius: 2em;
+}
+
+
+/******javascript opmaak*****/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mySlides{
+    display: flex;
+}
+
+.numbertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+    font-size: 12px;
+}
+
+#name-input{
+display: flex;
+flex-direction: column;
+}
+
+
+#name {
+    padding:0;
+    margin:0;
+}
+
+#weight{
+    padding:0;
+    margin:0;
+}
+
+#moves{
+    padding:0;
+    margin:0;
+}
+#abilities{
+    padding:0;
+    margin:0;
+}
+
+#pokesearch{
+    margin: 520px 0 0 0 ;
+}
+
+

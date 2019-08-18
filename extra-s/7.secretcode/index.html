@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <style> body { height: 100vh; width: 100vh; font-size: 20px; align-items: center; background-color: purple;color: rgb(165, 70, 255);}</style>
+</head>
+<body>
+    <p>Say my name! Say my name! Over and over again!</p>
+<script>
+const pressed = [];
+const secretCode = 'birthe';
+
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+  if (pressed.join('').includes(secretCode)) {
+    console.log('DING DING!');
+    cornify_add();
+  }
+  console.log(pressed);
+});
+</script>
+<script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</body>
+</html>

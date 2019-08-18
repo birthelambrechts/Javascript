@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel='stylesheet' href='style.css' />
+</head>
+<body>
+        <div class="calculator">
+                <input type="text" class="calculator-screen" value="" disabled />
+                
+                <div class="calculator-keys">
+                  
+              
+<ul id="calc-numbers"> 
+    <button type="button" value="7" data-key="55" onkeypress="key(event)" onmouseover="hovering(this)" onmouseout="BlackColor(this)">7</button>
+    <button type="button" value="8" data-key="56" onmouseover="hovering(this)" onmouseout="BlackColor(this)">8</button>
+    <button type="button" value="9" data-key="57" onmouseover="hovering(this)" onmouseout="BlackColor(this)">9</button>
+
+
+    <button type="button" value="4" data-key="52" onmouseover="hovering(this)" onmouseout="BlackColor(this)">4</button>
+    <button type="button" value="5" data-key="53" onmouseover="hovering(this)" onmouseout="BlackColor(this)">5</button>
+    <button type="button" value="6" data-key="54" onmouseover="hovering(this)" onmouseout="BlackColor(this)">6</button>
+    <button type="button" value="1" data-key="49" onmouseover="hovering(this)" onmouseout="BlackColor(this)">1</button>
+    <button type="button" value="2" data-key="50" onmouseover="hovering(this)" onmouseout="BlackColor(this)">2</button>
+    <button type="button" value="3" data-key="51" onmouseover="hovering(this)" onmouseout="BlackColor(this)">3</button>
+    <button type="button" value="0" data-key="48" onmouseover="hovering(this)" onmouseout="BlackColor(this)">0</button>
+</ul> 
+
+<div id="operations">
+    <button type="button" class="operator" value="+" data-key="187" onmouseover="hovering(this)" onmouseout="BlackColor(this)">+</button>
+    <button type="button" class="operator" value="-" data-key="189" onmouseover="hovering(this)" onmouseout="BlackColor(this)">-</button>
+    <button type="button" class="operator" value="*" data-key="186" onmouseover="hovering(this)" onmouseout="BlackColor(this)">&times;</button>
+    <button type="button" class="operator" value="/" data-key="191" onmouseover="hovering(this)" onmouseout="BlackColor(this)">&divide;</button>
+    <button type="button" class="operator" value="%" data-key="192" onmouseover="hovering(this)" onmouseout="BlackColor(this)">%</button>
+    <button type="button" class="decimal" value="." data-key="188" onmouseover="hovering(this)" onmouseout="BlackColor(this)">.</button>
+    <button type="button" class="all-clear" value="all-clear" data-key="76" onmouseover="hovering(this)" onmouseout="BlackColor(this)">C</button>
+    <button type="button" class="equal-sign operator" value="=" data-key="187" onmouseover="hovering(this)" onmouseout="BlackColor(this)">=</button>
+</div>
+     </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+    <title>Form</title>
+</head>
+
+<body>
+    <div id="container">
+           
+
+            <H2><img src="fill.png"></H2>
+        <div id="form">
+        <form id="base"  method="post" onsubmit="submitForm()">
+                <fieldset>
+                    <label for="firstName">Firstname:*</label><br>
+                    <input type="text" color="black" name="firstName" id="firstName" placeholder="First name"  required><br>
+
+                    <label for="lastName">Lastname:*</label> <br>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last name" required><br>
+
+                    <label for="userName">Username:*</label> <br>
+                    <input type="text" name="userName" id="userName"placeholder="Username" required ><br>
+              <div id="errorUser"></div>  
+                </fieldset>
+
+          
+    
+            <fieldset>
+                    <label for="address">Address:*</label> <br>
+                    <input type="text" name="address" id="address" placeholder="Adress" required> <br>
+
+                    <label for="city">City:*</label> <br>
+                    <input type="text" name="city" id="city" placeholder="City" required> <br>
+
+                    <label for="zip">Zip:*</label> <br>
+                    <input type="text" name="zip" id="zip" placeholder="Zip-code" required> <br>
+            </fieldset>
+
+
+
+            <fieldset>
+                        
+                    <label for="password">Password:*</label> <br>
+                    <input type="password" required name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[A-Z]).{2,}" title="Your Password must contain at least 1 number & 1 uppercase." > <br>
+
+                    <label for="confirm">Confirm password:*</label> <br>
+                    <input type="password" required name="confirm" id="confirm" placeholder="Confirm password"  pattern="(?=.*\d)(?=.*[A-Z]).{2,}" title="Please make sure your passwords match" > <br>
+                    <div id="errorPassword"></div>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email:*</label> <br>
+                <input type="text" name="email" id="email" placeholder="Email" pattern=".+@gmail.com"  title="Only @gmail.com allowed" required ><br>
+
+                <label for="birthday">Birthdate*:</label> <br>
+                <input type="date" name="birthday" id="birthday"> <br>
+            </fieldset>
+
+            <input type="submit" name="submit" id="submit" value="Register" >
+        </form>
+    </div>
+</div>
+
+    
+     
+
+    <script src='script.js'></script>
+   
+
+    
+</body>
+
+</html>

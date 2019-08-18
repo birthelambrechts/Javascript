@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='styles.css' />
+    <title>Rock, Paper, Sissors!</title>
+</head>
+
+<body>
+    <div class="content">
+    <h1>Rock, Paper, Scissors....</h1>
+   
+
+    <div>
+        <h3>Amount of players</h3>
+
+        <select name="players" id="players">
+            <option value="1">1 Player</option>
+            <option value="2">2 Players</option>
+        </select>
+    </div>
+
+    <div>
+        <h3>Player 1</h3>
+        <select name="p1choice" id="p1choice"><div class="custom-select" style="width:200px;">
+                
+              </div></select>
+              
+    </div>
+
+    <div>
+        <h3>Player 2</h3>
+        <select name="p2choice" id="p2choice" disabled></select>
+    </div>
+
+    <button id="play">Play</button>
+
+    <div id="result"></div>
+
+    
+
+    <div class="scoreboard-placement">
+            <div id="scoreboard">
+            <p class="scoreboard" id="playerWins"><strong>Your Victories: </strong><span id="wins">0</span></p>
+
+            <p class="scoreboard" id="playerTie"><strong>Total Ties: </strong><span id="tie">0</span></p>
+
+            <p class="scoreboard" id="playerLosses"><strong>Your defeats: </strong><span id="lose">0</span></p>
+            </div>
+            </div>
+
+            <div class= "img rock"><img src='yourock.png' alt="rock"></div>
+            
+            <div class= "img sciss"><img src='siss.jpg' alt="Scissors"></div>
+            <div class= "img paper"><img src='paper.jpg' alt="rock"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
